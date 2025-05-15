@@ -22,6 +22,6 @@ It also needed some basic features
 
 Looking at Waveshare's site, you get the following options:
 
-![journal/images/waveshare-site.png]
+![](journal/images/waveshare-site.png)
 
 I went for the 200x200 1.54" 2 Colour board due to it being cheap and matching my requirements
