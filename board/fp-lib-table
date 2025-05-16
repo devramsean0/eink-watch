@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "AFC07-S24ECA-00")(type "KiCad")(uri "${KIPRJMOD}/libs/AFC07-S24ECA-00")(options "")(descr ""))
+)

@@ -50,5 +50,6 @@ Aand, this is what I ended up with schematic wise:
 
 I intend to use 0805 or 0603 passives, since they are relatively easy to solder whilst still being small.
 
-The next step was to assign footprints, and start layout
+The next step was to assign footprints, and start layout. As mentioned above, most passives are 0805, but the inductor is 0604 and I had to go find a footprint for the FPC connector (AFC07-S24ECA-00).
 
+AAnd, then I hit a stumbing block, the display's mechanical drawing does not mention where the flex is in relation to the rest of the module, so idk where to place the fpc connector. I have opened a support ticket to ask for the measurements
