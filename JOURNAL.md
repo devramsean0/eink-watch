@@ -48,4 +48,7 @@ Aand, this is what I ended up with schematic wise:
 
 ![Eink Schematic V1](journal/images/eink-schematic-v1.png)
 
-I intend to use 0805 or 0603 passives, since they are relatively easy to solder whilst still being small
+I intend to use 0805 or 0603 passives, since they are relatively easy to solder whilst still being small.
+
+The next step was to assign footprints, and start layout
+
