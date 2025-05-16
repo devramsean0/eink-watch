@@ -22,6 +22,30 @@ It also needed some basic features
 
 Looking at Waveshare's site, you get the following options:
 
-![](journal/images/waveshare-site.png)
+![Waveshare Site](journal/images/waveshare-site.png)
 
 I went for the 200x200 1.54" 2 Colour board due to it being cheap and matching my requirements
+
+# Day 2 (16th of March 2025)
+## Choosing a battery
+My requirements for a battery are quite simple:
+- Be 3.7v  
+- Be physically small
+- Be rechargeable
+
+I decided on part [302530](https://www.aliexpress.com/item/1005008853926414.html) due to it's size.
+It does not have free shipping however, as the one with fre shipping was significantly more expensive.
+
+
+## Other thoughts
+- BMS board and main board may need to be seperate because of space. I shoud try to fit it all on one though
+
+## Starting the board design:
+I started the design with the part I'm least familiar with (The Eink display interface).
+Basing my work on Waveshare's reference diagram (found in their [datasheet](https://files.waveshare.com/upload/e/e5/1.54inch_e-paper_V2_Datasheet.pdf) on page 8.
+
+Aand, this is what I ended up with schematic wise:
+
+![Eink Schematic V1](journal/images/eink-schematic-v1.png)
+
+I intend to use 0805 or 0603 passives, since they are relatively easy to solder whilst still being small
