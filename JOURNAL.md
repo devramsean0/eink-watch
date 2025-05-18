@@ -52,4 +52,27 @@ I intend to use 0805 or 0603 passives, since they are relatively easy to solder 
 
 The next step was to assign footprints, and start layout. As mentioned above, most passives are 0805, but the inductor is 0604 and I had to go find a footprint for the FPC connector (AFC07-S24ECA-00).
 
-AAnd, then I hit a stumbing block, the display's mechanical drawing does not mention where the flex is in relation to the rest of the module, so idk where to place the fpc connector. I have opened a support ticket to ask for the measurements
+And, then I hit a stumbing block, the display's mechanical drawing does not mention where the flex is in relation to the rest of the module, so idk where to place the fpc connector. I have opened a support ticket to ask for the measurements
+
+# Day 3 (18th of May 2025)
+While I wait for waveshare to get back to me, I got started on the other components, Specifically the Power Management/Battery Management Systems.
+
+## Requirements:
+- USB Battery charging
+- Switchover between USB Power and Battery power (obviously)
+- Be small, yet safe
+
+Using the TP4057, I need a 5k resistor on PROG to configure it for a 200mA battery
+
+## Picking a voltage regulator
+I need something that's cheap, 3.3v and small. I eventually settled on the XC6206P332MR due to it's wide voltage range for input.
+Howver, it does give more current than I need, which gives the device headroom for doing things like plugging in GPIO devices.
+
+
+## The actual circuitry
+I decided to base my design around the circuitry used by Sparkletilt/Karmanyaahm, due to it being known good.
+
+Aand, this is the quite messy schematic. done and dusted :)
+
+![Power Schematic V1](journal/images/power-schematic-v1.png)
+
